@@ -75,7 +75,7 @@ Get-PoshThemes
 
 ## 添加Git Bash
 
-![image-20241225203410612](C:\Users\wink\Desktop\Settings\Windows-Terminal-settings.assets\image-20241225203410612.png)
+![image-20241225214254960](C:\Users\wink\Desktop\Settings\Windows-Terminal-settings.assets\image-20241225214254960.png)
 
 命令行：
 ```shell
