@@ -18,7 +18,7 @@ mkdir xx
 # 创建文件
 
 ```bash
-touch a.cpp
+touch a.txt
 ```
 
 
@@ -98,8 +98,8 @@ where clear
 ```bash
 rm a.txt
 rm  -f      （--force）   	(强制删除文件或目录：忽略不存在的文件，不提示确认)
-rm  -i      （interactive）	(删除既有文件或目录之前先询问用户)
-rm  -r或-R  （--recursive）   (递归删除，防止目录里面有文件不能删除)
+rm  -i      （--interactive）	(删除既有文件或目录之前先询问用户)
+rm  -r/-R  （--recursive）   (递归删除，防止目录里面有文件不能删除)
 rm  -rf                      (递归强制删除非空文件夹)
 ```
 

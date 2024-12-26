@@ -1,4 +1,4 @@
-```
+```bash
 # To the extent possible under law, the author(s) have dedicated all 
 # copyright and related and neighboring rights to this software to the 
 # public domain worldwide. This software is distributed without any warranty. 
@@ -69,55 +69,17 @@ unset _ps1_symbol
 # Fixup git-bash in non login env
 shopt -q login_shell || . /etc/profile.d/git-prompt.sh
 
-# eval "$(oh-my-posh init bash)"
-# oh-my-posh init pwsh --config $env:POSH_THEMES_PATH\montys.omp.json | Invoke-Expression
-eval "$(oh-my-posh init bash --config C:/Users/34344/AppData/Local/Programs/oh-my-posh/themes/montys.omp.json)"
+eval "$(oh-my-posh init bash --config C:/Users/wink/AppData/Local/Programs/oh-my-posh/themes/montys.omp.json)"
+# eval "$(oh-my-posh init bash --config C:/Users/wink/AppData/Local/Programs/oh-my-posh/themes/M365Princess.omp.json)"
+
+export TLDR_LANGUAGE="zh"
 
 export LANG=C.UTF-8
+
 alias ll='ls -lha'
 alias la='ls -lah'
-alias cdd='cd /d'
 alias cl='clear'
 alias br='cd ..'
-alias tc='cd /d/Code/codedic'
-
-alias cf='tc; cd codeforces'
-alias d2='cf; cd Div2'
-alias d4='cf; cd Div4'
-alias edu='cf; cd edu'
-
-alias atc='tc; cd atcoder'
-
-alias lg='tc; cd luogu/study'
-
-alias nk='tc; cd newcoder/2024牛客寒假训练'
-
-alias main='tc; vi main.cpp'
-alias bf='tc; vi bf.cpp'
-
-alias tr='tree -FCH'
-
-cph() { 
-    g++ $1.cpp -o $1 -std=c++20 -O2
-    echo '----------------------------------------------------------'
-    ./$1
-    rm $1
-    echo '----------------------------------------------------------'
-}
-
-v() {
-    vim $1.cpp
-}
-
-init() {
-    cp /d/code/snippets/in .in
-    cp /d/code/snippets/ins .ins
-}
-
-mk() {
-    mkdir $1
-    cd $1
-    init
-}
+alias f5='source "D:\Program Files\Git\etc\bash.bashrc"'
 ```
 
