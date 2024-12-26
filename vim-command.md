@@ -22,8 +22,6 @@ vim的对range的修改是非常强大的
 :%s/a/b/g
 ```
 
-
-
 ## 全文a换b(经过询问)
 
 ```bash
@@ -35,8 +33,6 @@ vim的对range的修改是非常强大的
 ```bash
 :%s/a/b/gc
 ```
-
-
 
 ## 从第5行到第15行进行替换
 
@@ -52,47 +48,33 @@ vim的对range的修改是非常强大的
 
 
 
-
-
-
-
 # vim配置文件路径
-
-```
-system vimrc file: "/etc/vimrc"
-user vimrc file: "$HOME/.vimrc"
-2nd user vimrc file: "~/.vim/vimrc"
-```
 
 第一个路径在git的根目录下,如图
 
-```
-"D:\Program Files (x86)\Git\etc\vimrc"
-```
-
-![image-20240130070450436](./../assets/vim/image-20240130070450436-1706885635932-2.png)
-
-
-
-第二个是用户根目录,如图
-
-```
-"C:\Users\34344\.vimrc"
+```shell
+D:\Program Files\Git\etc\vimrc
 ```
 
-![image-20240202225559017](./../assets/vim/image-20240202225559017.png)
+![image-20241226173327703](C:\Users\wink\Desktop\Settings\vim-command.assets\image-20241226173327703.png)
+
+第二个在用户根目录下
+
+```shell
+C:\Users\wink\.vimrc
+```
 
 第三个也在用户根目录下
 
-```
-"C:\Users\34344\.vim\vimrc"
+```shell
+C:\Users\wink\.vim\vimrc
 ```
 
-![image-20240202225638334](./../assets/vim/image-20240202225638334.png)
+
 
 # 自动补全选择
 
-```
+```shell
 ctrl + n (down)
 ctrl + p (up)
 ```
@@ -120,30 +102,30 @@ ca(  (进入insert模式)
 # 移动跳转
 
 ```
-gg			到文本第一个字符
-shift+g		到文本最后一个字符
-Ctrl+o		到上一次光标的位置
-zz			不动光标让文本居中
+gg				到文本第一个字符
+shift + g		到文本最后一个字符
+ctrl + o		到上一次光标的位置
+zz				不动光标让文本居中
 ```
 
 
 
 # normal模式转insert模式
 
-```
-i			到光标前输入
-a			到光标后输入
-shift+i		到行首输入
-shift+a		到行尾输入
-o			到下一行输入
-shift+o		到上一行输入
+```shell
+i				到光标前输入
+a				到光标后输入
+shift + i		到行首输入
+shift + a		到行尾输入
+o				到下一行输入
+shift + o		到上一行输入
 ```
 
 
 
 # 复制全文
 
-```
+```shell
 ggyG
 ```
 
@@ -151,7 +133,7 @@ ggyG
 
 # 批量修改
 
-```
+```shell
 old
 old 
 old
@@ -169,7 +151,7 @@ old
 
 # 跳出大括号在下一行输入
 
-```
+```shell
 jko
 ```
 
@@ -177,7 +159,7 @@ jko
 
 # 删除所有注释
 
-```
+```shell
 %s/\/\/.*//g
 ```
 
@@ -185,7 +167,7 @@ jko
 
 # 修改当前行行首的单词
 
-```
+```shell
 0ciw
 ```
 
