@@ -98,31 +98,47 @@ D:\Program Files\Git\etc\bash.bashrc
 
 中加入以下代码:
 
-```
+```bash
 eval "$(oh-my-posh init bash --config C:/Users/wink/AppData/Local/Programs/oh-my-posh/themes/montys.omp.json)"
+```
+
+## 删除到最开始的时候屏幕闪烁解决办法
+
+新建一个~/.inputrc文件，输入代码：
+
+```bash
+set bell-style none
+```
+
+如果是windows用户，则路径为：
+
+```shell
+C:\Users\wink\.inputrc
 ```
 
 ## 中文乱码
 
 可以用
 
-```
+```bash
 locale
 ```
 
 来看当前的语言包
 
-```
+```bash
 export LANG=C.UTF-8
 ```
 
 需要把这些内容写入到路径:
 
-"D:\Program Files (x86)\Git\etc\bash.bashrc"
+```bash
+D:\Program Files\Git\etc\bash.bashrc
+```
 
 新开一个bash后再次输入
 
-```
+```bash
 locale
 ```
 
